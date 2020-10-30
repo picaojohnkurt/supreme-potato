@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+			<title>Gallery</title>
+	<meta name="viewport" content="width=device-width, initial-scald=1"/>
+		<style>
+				*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;	
+				}
+	body{
+	width: 100%;
+	}
+			header{
+		width: auto;
+		overflow: auto;
+			}
+			header h1{
+		padding: 15px;
+		text-align: center;
+	 width: 100%;
+	 font-family: 'Courier new', sans-serif;
+			}
+		nav{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		}
+		nav ul{
+		margin: 5px;
+		list-style-type: none;
+		}
+		nav li,a{
+		display: inline-block;
+		}
+		nav a{
+		padding: 20px;
+		text-align: center;
+	 text-decoration: none;
+	 position: relative;
+	 overflow: hidden;
+	 background-color: rgba(0,0,21,0.99);
+	 color: white;
+	 border-radius: 5px;
+	 overflow: hidden;
+	 transition: all 0.6s;
+		}
+		li a::after{
+		content: '';
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		width: 0%;
+		height: 0%;
+		background-color: white;
+		transition: all 0.5s;
+		}
+		a:hover{
+		background-color: grey;
+		}
+		a:hover:after{
+		width: 100%;
+		height: 100%;
+		opacity: 0.1;
+		}
+		div.container{
+		width: auto;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		}
+		div.container img{
+		margin: 10px;
+		width: 100%;
+		height: 200px;
+		border: none;
+		outline: none;
+		transition: all 0.5s;
+		position: relative;
+		overflow: hidden;
+		box-shadow: 0 0 2px 2px rgba(0,0,0,0.12);
+		}
+	div.container img:hover{
+margin: 0;
+padding: 0;
+width: 100%;
+height: 210px;
+	}
+	@media screen and (min-width: 600px){
+ header{
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ }	
+ header h1{
+ text-align: left;
+ width: 100%;
+ border-bottom: none!important;
+ }
+ nav{
+ overflow: 100%;
+ }
+ nav ul{
+ float: right;
+ }
+ img{
+ margin: 20px!important;
+ width: 70%!important;
+ height: 290px!important;
+ transition: all 0.5;
+ }
+ img:hover{
+ width: 87%!important;
+ height: 340px!important;
+ }
+	}
+		</style>
+</head>
+<body>
+			<header>
+			<h1>Gallery</h1>
+			<nav>
+		<ul>
+			<li><a href="#" onclick="AllImage()">All</a></li>
+			<li><a href="#" onclick="Cars()">Cars</a></li>
+			<li><a href="#" onclick="Two()">Flowers</a></li>
+			<li><a href="#" onclick="Three()">Cities</a></li>
+		</ul>
+		</nav>
+			</header>
+		<div class="container">
+				<!--Rumble The Images-->
+					<img class="city" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTMM7Eo_nlcjQAxL6t_wdxrLnD5EM2j2n9MDw&usqp=CAU">
+					<img class="flowers" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzHSi7rQ1JFd7pAE9GcEy3MVZMUHsAKWsicw&usqp=CAU">
+					<img class="flowers" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTXYG4p2QymG0dYfqtICJ7kpLt1igviWcXpxw&usqp=CAU">
+					<img class="cars" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQQvzh4609zDiex8bs5OGEQYX-3APfHDnFLJg&usqp=CAU">
+					<img class="city" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSEc9Qgg9UEH72avYHuWRoVV_onQKHvuPvTpw&usqp=CAU">
+					<img class="cars" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSK8GpHAveBW0pUPopQ32qZ5duTJR7t_2Scag&usqp=CAU">
+					<img class="city" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRzKorquMvx8XPQZw5JIXnEorCstZF75zBKiQ&usqp=CAU">
+					<img class="city" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRBRjYi0ZF1zUmW8rxFuvgopB8B38lE6pceFw&usqp=CAU">
+					<img class="city" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSTRefAW0mHabwU6GpbiHhW-bFVtPvGcTdicA&usqp=CAU">
+					<img class="flowers" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTisPDItAj4ADbCHrnpNxwCQeeOkFNUjS1AZQ&usqp=CAU">
+					<img class="cars" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQs65wpBsS_MIAFOlDsm1nbxtZkdXm_4x8DQA&usqp=CAU">
+			<img class="cars" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTU9ifAHT5x49X9-wZOZWStN2B67f0HIzXjCg&usqp=CAU">
+					<img class="flowers" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTIWbT3lZBn0QDlp9uPEq-RxAUUXRb7qzF4lw&usqp=CAU">
+					<img class="flowers" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT8PgzI26otEpiodQvnjWq1i2HzKDlEkSyHgw&usqp=CAU">
+					<img class="cars" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSkOwMLZGeexwcox18hYT3KAVwrpZJ183l5Jw&usqp=CAU">
+					<img class="city" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS-0F2fmc0yBqhghyFlMO7bBfULC9Dq6BboMA&usqp=CAU">
+					<img class="flowers" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRilGWQgJTWIEPtkUfNHuQIUy8aMXZG2SIxuw&usqp=CAU">
+					<img class="cars" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQpY6adfALSp8s6gdecVdT1Ih8DH_geo8eNFA&usqp=CAU">
+					<img class="city" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS1j7wsc4l0kJ1opQhpXrnC8O-_rs1YPPZDyQ&usqp=CAU">
+		</div>
+	<script>
+		
+		function Cars(){
+		var z = document.getElementsByClassName("cars");
+	var x = document.getElementsByClassName("city");
+	var y = document.getElementsByClassName("flowers");
+for(var v =0;v < z.length;v++){
+for(var c =0;c < y.length; c++){
+	for(var i=0;i < x.length;i++){
+			x[i].style.display ="none";
+			y[c].style.display ="none";
+			z[v].style.display ="block";
+	}
+	}
+	}
+		}	
+		function Two(){
+		var z = document.getElementsByClassName("cars");
+	var x = document.getElementsByClassName("city");
+	var y = document.getElementsByClassName("flowers");
+for(var v =0;v < z.length;v++){
+for(var c =0;c < y.length; c++){
+	for(var i=0;i < x.length;i++){
+			x[i].style.display ="none";
+			y[c].style.display ="block";
+			z[v].style.display ="none";
+	}
+	}
+	}
+		}	
+	function Three(){
+		var z = document.getElementsByClassName("cars");
+	var x = document.getElementsByClassName("city");
+	var y = document.getElementsByClassName("flowers");
+for(var v =0;v < z.length;v++){
+for(var c =0;c < y.length; c++){
+	for(var i=0;i < x.length;i++){
+			x[i].style.display ="block";
+			y[c].style.display ="none";
+			z[v].style.display ="none";
+	}
+	}
+	}
+		}	
+function AllImage(){
+		var z = document.getElementsByClassName("cars");
+	var x = document.getElementsByClassName("city");
+	var y = document.getElementsByClassName("flowers");
+for(var v =0;v < z.length;v++){
+for(var c =0;c < y.length; c++){
+	for(var i=0;i < x.length;i++){
+			x[i].style.display ="block";
+			y[c].style.display ="block";
+			z[v].style.display ="block";
+	}
+	}
+	}
+		}	
+	</script>
+</body>
+</html>
